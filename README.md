@@ -1,16 +1,79 @@
-# React + Vite
+# KariyerTakip — İş Başvurusu Takip Sistemi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KariyerTakip, iş arama sürecini daha düzenli yönetmek ve yapılan iş başvurularını tek bir yerde takip etmek amacıyla geliştirilmiş bir web uygulamasıdır.
 
-Currently, two official plugins are available:
+Bu proje; React ile arayüz geliştirme, yeniden kullanılabilir bileşenler oluşturma, durum yönetimi ve duyarlı tasarım konularında pratik yapmak amacıyla geliştirilmiştir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Özellikler
 
-## React Compiler
+- **Genel Bakış Paneli:** Toplam başvuru sayısını, mülakatları, teklifleri ve son başvuruları görüntüleme.
+- **Başvuru Yönetimi:** Yeni başvuru ekleme, mevcut başvuruları düzenleme, detaylarını görüntüleme ve silme.
+- **Kanban Panosu:** Başvuruları durumlarına göre sütunlarda düzenleme ve sürükle-bırak yöntemiyle durum değiştirme.
+- **Arama ve Filtreleme:** Şirket adına veya pozisyona göre arama yapma ve başvuru durumuna göre filtreleme.
+- **Başvuru Detayları:** Başvuru notlarını ve ilan bağlantılarını görüntüleme.
+- **Veri Saklama:** Tarayıcının LocalStorage özelliği sayesinde sayfa yenilendiğinde başvuru verilerini koruma.
+- **Duyarlı Tasarım:** Masaüstü ve mobil ekranlara uyumlu arayüz.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Kullanılan Teknolojiler
 
-## Expanding the ESLint configuration
+- **React:** Kullanıcı arayüzü geliştirme
+- **JavaScript:** Uygulama mantığı
+- **Vite:** Geliştirme ortamı ve derleme
+- **Tailwind CSS:** Arayüz stillendirme
+- **React Router:** Sayfalar arası yönlendirme
+- **LocalStorage:** Başvuru verilerini tarayıcıda saklama
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Başvuru Durumları
+
+Başvurular aşağıdaki durumlara göre takip edilebilir:
+
+- Başvuruldu
+- İnceleniyor
+- Mülakat
+- Teklif
+- Reddedildi
+
+## Kurulum ve Çalıştırma
+
+### Gereksinimler
+
+- [Node.js](https://nodejs.org/)
+- npm
+
+### 1. Depoyu klonlayın
+
+Aşağıdaki komutta `GITHUB_KULLANICI_ADINIZ` bölümünü kendi GitHub kullanıcı adınızla değiştirin.
+
+```bash
+git clone https://github.com/GITHUB_KULLANICI_ADINIZ/KariyerTakip.git
+```
+
+### 2. Proje klasörüne girin
+
+```bash
+cd KariyerTakip
+```
+
+### 3. Bağımlılıkları yükleyin
+
+```bash
+npm install
+```
+
+### 4. Geliştirme sunucusunu başlatın
+
+```bash
+npm run dev
+```
+
+Terminalde gösterilen yerel adresi tarayıcınızda açarak uygulamayı kullanabilirsiniz.
+
+## Veri Saklama
+
+Uygulama şu anda verileri tarayıcının LocalStorage alanında saklamaktadır. Bu sayede sayfa yenilendiğinde veriler korunur. Ancak veriler bir sunucuya aktarılmaz ve farklı cihazlar arasında otomatik olarak eşitlenmez.
+
+## Projenin Amacı
+
+KariyerTakip, React ve JavaScript becerilerimi geliştirmek, gerçek bir ihtiyaca yönelik uygulama oluşturmak ve yazılım geliştirme alanındaki portföyümü güçlendirmek amacıyla geliştirdiğim bir projedir.
+
+**Proje durumu:** Geliştirme aşamasında.
