@@ -1,5 +1,7 @@
 # KariyerTakip — İş Başvurusu Takip Sistemi
 
+Canlı Demo: https://rainbow-rabanadas-ee062e.netlify.app/
+
 KariyerTakip, iş arama sürecini daha düzenli yönetmek ve yapılan iş başvurularını tek bir yerde takip etmek amacıyla geliştirilmiş bir web uygulamasıdır.
 
 Bu proje; React ile arayüz geliştirme, yeniden kullanılabilir bileşenler oluşturma, durum yönetimi ve duyarlı tasarım konularında pratik yapmak amacıyla geliştirilmiştir.
